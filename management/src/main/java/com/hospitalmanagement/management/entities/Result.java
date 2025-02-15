@@ -20,4 +20,28 @@ public class Result {
     @OneToOne
     AppointmentTests appointmentTests;
 
+    // Getters and Setters
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public AppointmentTests getAppointmentTests() {
+        return appointmentTests;
+    }
+
+    public void setAppointmentTests(AppointmentTests appointmentTests) {
+        this.appointmentTests = appointmentTests;
+    }
 }

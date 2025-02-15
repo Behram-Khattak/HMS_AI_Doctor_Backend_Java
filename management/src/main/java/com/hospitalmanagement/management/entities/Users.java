@@ -24,6 +24,15 @@ public class Users {
 
     String department;
 
+    // Getters and Setters
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
     // Getter for role
     public String getRole() {
         return role;
@@ -64,12 +73,12 @@ public class Users {
         this.password = password;
     }
 
-    // Getter for role
+    // Getter for department
     public String getDepartment() {
         return department;
     }
 
-    // Setter for password
+    // Setter for department
     public void setDepartment(String department) {
         this.department = department;
     }

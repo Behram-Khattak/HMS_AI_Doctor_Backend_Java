@@ -19,10 +19,51 @@ public class Prescription {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
 
-    @OneToMany(fetch = FetchType.EAGER,mappedBy = "prescription", cascade = CascadeType.ALL)
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "prescription", cascade = CascadeType.ALL)
     private List<PrescriptionMedicines> prescriptionMedicines;
 
     String status;
     double amount;
     LocalDate date;
+
+    // Getters and Setters
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public List<PrescriptionMedicines> getPrescriptionMedicines() {
+        return prescriptionMedicines;
+    }
+
+    public void setPrescriptionMedicines(List<PrescriptionMedicines> prescriptionMedicines) {
+        this.prescriptionMedicines = prescriptionMedicines;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public double getAmount() {
+        return amount;
+    }
+
+    public void setAmount(double amount) {
+        this.amount = amount;
+    }
+
+    public LocalDate getDate() {
+        return date;
+    }
+
+    public void setDate(LocalDate date) {
+        this.date = date;
+    }
 }

@@ -21,10 +21,51 @@ public class AppointmentTests {
     Test test;
 
     @ManyToOne
-    @JoinColumn(name="appointment_id")
+    @JoinColumn(name = "appointment_id")
     Appointment appointment;
 
     String status;
     LocalDate date;
 
+    // Getters
+    public Long getId() {
+        return id;
+    }
+
+    public Test getTest() {
+        return test;
+    }
+
+    public Appointment getAppointment() {
+        return appointment;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public LocalDate getDate() {
+        return date;
+    }
+
+    // Setters
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setTest(Test test) {
+        this.test = test;
+    }
+
+    public void setAppointment(Appointment appointment) {
+        this.appointment = appointment;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public void setDate(LocalDate date) {
+        this.date = date;
+    }
 }
